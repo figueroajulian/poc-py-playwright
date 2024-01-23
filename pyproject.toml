@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "playwright-py"
+description = "Proof of Concept - PY + playwright"
+version = "0.1.0"
+authors = ["Julian <juliaanfigueroaa@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.4"
+pytest-playwright = "^0.4.3"
+pytest-base-url = "^2.0.0"
+pytest-xdist = "^3.3.0"
+playwright = "^1.39.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
