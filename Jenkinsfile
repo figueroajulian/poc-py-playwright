@@ -10,6 +10,7 @@ pipeline {
             steps {
                 sh 'pip install poetry'
                 sh 'poetry install'
+                sh 'export PYTHONPATH="${PYTHONPATH}:/var/jenkins_home/workspace/playwright"'
                 sh 'poetry run pytest'
             }
         }
