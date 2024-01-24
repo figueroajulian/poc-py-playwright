@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'pip install poetry'
                 sh 'poetry install'
-                sh 'pytest'
+                sh 'poetry run pytest'
             }
         }
     }
