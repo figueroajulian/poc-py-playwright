@@ -27,7 +27,7 @@ def test_wait_for_service(page:Page):
         page.get_by_title('Introduction').is_visible()
 
     response = response_info.value
-    assert response.status == 200, f"La respuesta tiene un código de estado {response.status}, se esperaba 200"
+    assert response.status == 200, f"The response code is {response.status}, but 200 was expected"
 
     page.get_by_text('Network').click()
 
@@ -35,4 +35,4 @@ def test_wait_for_service(page:Page):
         page.get_by_title('Network').first.is_visible()
 
     response = response_info.value
-    assert response.status == 200, f"La respuesta tiene un código de estado {response.status}, se esperaba 200"
+    assert response.status == 200, f"The response code is {response.status}, but 200 was expected"
